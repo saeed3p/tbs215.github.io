@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Seat Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="background-video">
+        <source src="hotseatbg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="wrapper">
+        <!-- Left Rectangle -->
+        <div class="side-rectangle">
+            <div class="rectangle-content">
+                <h2 class="team-title">TEAM 1</h2>
+                <div id="team-score-left" class="team-score">000</div>
+                <button class="action-button" onclick="addPoints('left')">Points</button>
+            </div>
+        </div>
+
+        <!-- Center Content -->
+        <div class="container">
+            <!-- Replace HOT SEAT text with image -->
+<img src="hotseatlogom.png" alt="Hot Seat" class="hot-seat-image">
+
+
+            <!-- Countdown Timer with Reset Button -->
+            <div class="countdown-container">
+                <button class="reset-button" id="reset-timer">Reset</button>
+                <div class="countdown">
+                    <span id="timer">02:00</span>
+                </div>
+            </div>
+
+            <!-- Start/Pause Countdown Button -->
+            <div class="button-wrapper">
+                <button class="action-button" id="start-timer">Start Countdown</button>
+            </div>
+
+            <!-- Random Word -->
+            <h2 class="happy" id="random-word">HAPPY</h2>
+            
+            <!-- Points Section -->
+            <div class="points-section">
+                <span class="points-text">Points:</span>
+                <span class="points-value" id="points-value">10</span>
+            </div>
+
+            <!-- Randomize Button -->
+            <button class="action-button" onclick="changeContent()">Click Me</button>
+        </div>
+
+        <!-- Right Rectangle -->
+        <div class="side-rectangle">
+            <div class="rectangle-content">
+                <h2 class="team-title">TEAM 2</h2>
+                <div id="team-score-right" class="team-score">000</div>
+                <button class="action-button" onclick="addPoints('right')">Points</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.side-rectangle {
+    background-color: rgba(0, 255, 225, 0); /* Semi-transparent color */
+    width: 400px;
+    height: 100%;
+    border: 5px solid white; /* Solid white border */
+    position: relative;
+}
+
+.rectangle-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px;
+}
+
+.team-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.team-score {
+    font-size: 72px;
+    color: white;
+    margin: 20px 0;
+}
+
+.action-button {
+    padding: 15px 30px;
+    font-size: 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hot-seat-image {
+    width: 50%; /* Adjust the width percentage to scale the image */
+    max-width: 400px; /* Set a maximum width if needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the image */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.countdown-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.countdown {
+    font-size: 48px;
+    margin-left: 10px;
+    color: white;
+}
+
+.reset-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+    background-color: darkred;
+}
+
+.button-wrapper {
+    margin-bottom: 20px;
+}
+
+.happy {
+    font-size: 48px;
+    color: white;
+    border: 5px solid white;
+    display: inline-block;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.points-section {
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.points-text {
+    color: white;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.points-value {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.red-flash {
+    background-color: red;
+}
